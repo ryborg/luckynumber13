@@ -1,0 +1,108 @@
+/*
+Theme Name: Lucky Number Thirteen
+Theme URI: http://dev.commons.hwdsb.on.ca
+Author: mrjarbenne
+Author URI: http://mrjarbenne.ca
+Template: twentythirteen
+Description: A child theme for HWDSB Commons
+Version: 0.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: black, brown, orange, tan, white, light, one-column, two-columns, right-sidebar, flexible-width, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, translation-ready
+Text Domain: twentythirteen
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+@import url("../twentythirteen/style.css");
+
+/* Import the font for the top navigation bar */
+
+@font-face {
+	font-family: 'NeoRetroDrawRegular';
+	src: url('NeoRetroDraw/NEORD___-webfont.eot');
+	src: url('NeoRetroDraw/NEORD___-webfont.eot?#iefix') format('embedded-opentype'),
+		url('NeoRetroDraw/NEORD___-webfont.woff') format('woff'),
+		url('NeoRetroDraw/NEORD___-webfont.ttf') format('truetype'),
+		url('NeoRetroDraw/NEORD___-webfont.svg#NeoRetroDrawRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NeoRetroFillRegular';
+    src: url('neoretro/NEORF___-webfont.eot');
+    src: url('neoretro/NEORF___-webfont.eot?#iefix') format('embedded-opentype'),
+         url('neoretro/NEORF___-webfont.woff') format('woff'),
+         url('neoretro/NEORF___-webfont.ttf') format('truetype'),
+         url('neoretro/NEORF___-webfont.svg#NeoRetroFillRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.navbar {
+background-color: #4A688C;
+}
+
+.nav-menu li a {
+	font-family: NeoRetroFillRegular, Helvetica;
+	font-size: 24px;
+}
+
+.nav-menu .current_page_item > a, .nav-menu .current_page_ancestor > a, .nav-menu .current-menu-item > a, .nav-menu .current-menu-ancestor > a {
+color: #ffffff;
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Change up some of the colours */
+
+.site-footer .sidebar-container {
+background-color: #222F40;
+}
+
+.entry-content a {
+	color: #424242;
+}
+
+.widget {
+	background-color: #A8B7CA;
+}
+
+.site-footer {
+	background-color: #797979;
+}
+
+.site-footer a {
+    color: #FFFFFF;
+}
+
+.site-footer .widget a {
+	color: #eaeaea;
+}
+
+/* Differentiate Menu and Submenu on the Profile page by making the Submenu smaller */
+
+#buddypress div.item-list-tabs#subnav {
+background: transparent;
+margin: 10px 0 10px;
+overflow: hidden;
+font-size: 14px;
+}
+
+/* Masonry brick layout */
+#container {
+    width: 100%; /* width of the entire container for the wall */
+ }
+.brick {
+    width: 210px; /* width of each brick less the padding inbetween */
+background-color: #ccc;
+    padding: 0px 5px 15px 5px;
+    margin: 5px;
+}
+.toolname {
+	margin-left: auto;
+	margin-right: auto;
+	font-family: font-family: NeoRetroFillRegular, Helvetica;
+	color: #000;
+}
