@@ -17,12 +17,9 @@ get_header(); ?>
 		?>    
 				<?php while (have_posts()) : the_post(); ?>
 		<div class="brick">	
-		<div class="brick_featured_image">
         		<?php the_post_thumbnail('featured-home-thumb'); ?>
-        		<div class="toolname"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></div>
- 
- 
-</div>
+   <a href="<?php the_permalink() ?>"><?php the_title(); ?></a></div>
+
 <?php endwhile; ?> 
 <!-- #brick -->
 </div><!-- #container -->
