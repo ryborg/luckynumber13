@@ -99,10 +99,10 @@ font-size: 14px;
 }
 /* Fix the Group Admin wording getting hyphenated */
 #buddypress ul.item-list li div.item-title {
-	width: inherit;
+	width: auto;
 }
 #buddypress div#item-header div#item-actions {
-	width: inherit;
+	width: auto;
 }
 /* Masonry brick layout */
 #container {
@@ -123,4 +123,8 @@ background-color: #D4E8FF;
 	padding: 4px 0px 0px 6px;
 	font-family: NeoRetroFillRegular, Helvetica;
 	color: #222F40;
+}
+/* Fix for Members list float */
+#members-list .item {
+width: 64%;
 }
