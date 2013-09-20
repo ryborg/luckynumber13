@@ -92,17 +92,21 @@ font-size: 14px;
 
 /* Masonry brick layout */
 #container {
-    width: 100%; /* width of the entire container for the wall */
+    width: 75%; /* width of the entire container for the wall */
+	padding: 10px 10px 10px 10px;
  }
 .brick {
     width: 210px; /* width of each brick less the padding inbetween */
-background-color: #ccc;
+background-color: #D4E8FF;
     padding: 0px 5px 15px 5px;
     margin: 5px;
 }
+.toolpic {
+	padding: 6px 2px 2px 2px;
+	margin:  auto;
+}
 .toolname {
-	margin-left: auto;
-	margin-right: auto;
-	font-family: font-family: NeoRetroFillRegular, Helvetica;
-	color: #000;
+	padding: 4px 0px 0px 6px;
+	font-family: NeoRetroFillRegular, Helvetica;
+	color: #222F40;
 }

@@ -17,16 +17,13 @@ get_header(); ?>
 		?>    
 				<?php while (have_posts()) : the_post(); ?>
 		<div class="brick">	
-		<div class="brick_featured_image">
-        		<?php the_post_thumbnail('featured-home-thumb'); ?>
-        		<div class="toolname"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></div>
- 
- 
-</div>
+        		<div class="toolpic"><a href="<?php the_permalink() ?>"><?php the_post_thumbnail('featured-home-thumb'); ?></a></div><!-- #toolpic -->
+				<div class="toolname"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></div><!-- #toolname -->
+				<?php the_excerpt(); ?></div><!-- #brick -->
+
 <?php endwhile; ?> 
-<!-- #brick -->
+
 </div><!-- #container -->
-
-
+<?php wooslider( array( 'slider_type' => 'posts', 'smoothheight' => 'true' ), array( 'category' => 'featured', 'type' => 'jjb_toolkit' ) ); ?>
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
