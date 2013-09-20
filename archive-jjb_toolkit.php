@@ -22,13 +22,6 @@ get_header(); ?>
 				<div class="toolname"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></div><!-- #toolname -->
 				<?php the_excerpt(); ?></div><!-- #brick -->
 
-        		<?php the_post_thumbnail('featured-home-thumb'); ?>
-   <a href="<?php the_permalink() ?>"><?php the_title(); ?></a></div>
-
-<?php endwhile; ?> 
-<!-- #brick -->
-</div><!-- #container -->
-
 <?php endwhile; ?> 
 
 </div><!-- #container -->
