@@ -17,18 +17,17 @@ get_header(); ?>
 		?>    
 				<?php while (have_posts()) : the_post(); ?>
 		<div class="brick">	
-<<<<<<< HEAD
+
         		<div class="toolpic"><a href="<?php the_permalink() ?>"><?php the_post_thumbnail('featured-home-thumb'); ?></a></div><!-- #toolpic -->
 				<div class="toolname"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></div><!-- #toolname -->
 				<?php the_excerpt(); ?></div><!-- #brick -->
-=======
+
         		<?php the_post_thumbnail('featured-home-thumb'); ?>
    <a href="<?php the_permalink() ?>"><?php the_title(); ?></a></div>
 
 <?php endwhile; ?> 
 <!-- #brick -->
 </div><!-- #container -->
->>>>>>> a34efeeb992692bee86adde40c0e4301fb83e757
 
 <?php endwhile; ?> 
 
