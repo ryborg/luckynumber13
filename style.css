@@ -17,7 +17,6 @@ Use it to make something cool, have fun, and share what you've learned with othe
 @import url("../twentythirteen/style.css");
 
 /* Import the font for the top navigation bar */
-
 @font-face {
 	font-family: 'NeoRetroDrawRegular';
 	src: url('NeoRetroDraw/NEORD___-webfont.eot');
@@ -28,7 +27,6 @@ Use it to make something cool, have fun, and share what you've learned with othe
     font-weight: normal;
     font-style: normal;
 }
-
 @font-face {
     font-family: 'NeoRetroFillRegular';
     src: url('neoretro/NEORF___-webfont.eot');
@@ -39,48 +37,37 @@ Use it to make something cool, have fun, and share what you've learned with othe
     font-weight: normal;
     font-style: normal;
 }
-
 /* Change up some of the colours */
 .navbar {
 background-color: #4A688C;
 }
-
 .nav-menu li a {
 	font-family: NeoRetroFillRegular, Helvetica;
 	font-size: 24px;
 }
-
 .nav-menu .current_page_item > a, .nav-menu .current_page_ancestor > a, .nav-menu .current-menu-item > a, .nav-menu .current-menu-ancestor > a {
 color: #ffffff;
 	font-weight: normal;
 	font-style: normal;
 }
-
 .site-footer .sidebar-container {
 background-color: #222F40;
 }
-
 .entry-content a {
 	color: #424242;
 }
-
 .widget {
 	background-color: #A8B7CA;
 }
-
 .site-footer {
 	background-color: #797979;
 }
-
 .site-footer a {
     color: #FFFFFF;
 }
-
 .site-footer .widget a {
 	color: #eaeaea;
 }
-
-
 /* Differentiate Menu and Submenu on the Profile page by making the Submenu smaller */
 #buddypress div.item-list-tabs#subnav {
 background: transparent;
@@ -88,17 +75,14 @@ margin: 10px 0 10px;
 overflow: hidden;
 font-size: 14px;
 }
-
 /* Make the "username did something" text smaller */
 .activity-header {
 	font-size: 78%;
 }
-
 /* Added to fix the buttons on the activity stream cause they were too small for the words */
 #buddypress div.generic-button a {
 	font: normal 10px/20px Arial, Tahoma, Verdana, sans-serif;
 }
-
 /* Added to fix long post titles on Sites page */
 #buddypress ul.item-list li div.meta {
 	color: #888;
@@ -106,7 +90,6 @@ font-size: 14px;
 	margin-top: 15px;
 	width: 400px;
 }
-
 /* Fix Scroll Bar issues that appear because of the Add To List button on Members Directory */
 #buddypress ul.item-list li {
 	border-bottom: 1px solid #eaeaea;
@@ -114,7 +97,13 @@ font-size: 14px;
 	margin: 0;
 	position: relative;
 }
-
+/* Fix the Group Admin wording getting hyphenated */
+#buddypress ul.item-list li div.item-title {
+	width: inherit;
+}
+#buddypress div#item-header div#item-actions {
+	width: inherit;
+}
 /* Masonry brick layout */
 #container {
     width: 75%; /* width of the entire container for the wall */
