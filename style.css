@@ -82,12 +82,38 @@ background-color: #222F40;
 }
 
 /* Differentiate Menu and Submenu on the Profile page by making the Submenu smaller */
-
 #buddypress div.item-list-tabs#subnav {
 background: transparent;
 margin: 10px 0 10px;
 overflow: hidden;
 font-size: 14px;
+}
+
+
+/* Make the "username did something" text smaller */
+.activity-header {
+	font-size: 78%;
+}
+
+/* Added to fix the buttons on the activity stream cause they were too small for the words */
+#buddypress div.generic-button a {
+	font: normal 10px/20px Arial, Tahoma, Verdana, sans-serif;
+}
+
+/* Added to fix long post titles on Sites page */
+#buddypress ul.item-list li div.meta {
+	color: #888;
+	font-size: 80%;
+	margin-top: 15px;
+	width: 400px;
+}
+
+/* Fix Scroll Bar issues that appear because of the Add To List button on Members Directory */
+#buddypress ul.item-list li {
+	border-bottom: 1px solid #eaeaea;
+	padding: 40px 0;
+	margin: 0;
+	position: relative;
 }
 
 /* Masonry brick layout */
